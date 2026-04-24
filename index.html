@@ -153,6 +153,28 @@
             background-color: #f9f9f9;
         }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4178514832412219');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4178514832412219&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script>
+    function trackLead() {
+        fbq('track', 'Lead');
+    }
+    </script>
 </head>
 <body>
 
@@ -182,7 +204,7 @@
 
         <h2>なぜ、賢い人は「1社」を信じないのか？</h2>
         
-        <p>ある調査では、同じ物件でも不動産会社によって<span class="highlight">査定額に最大300万円〜500万円の差</span>が出ることが判明しています。会社によって得意なエリア、ターゲットとする客層、そして「今、どうしてもその物件が欲しい」という在庫状況がバラバラだからです。</p>
+        <p>ある調査では、同じ物件でも不動産会社によって<span class="highlight">査定額に最大300万円〜500万円の差</span>が出ることが判明しています。会社によって得意なエリア、ターゲットとする客層、ターゲットの在庫状況がバラバラだからです。</p>
 
         <div class="trust-box">
             <p><strong>実際に試した私の結果：</strong></p>
@@ -224,7 +246,7 @@
         <p><span class="highlight">今日知っておかないと、来月には100万円損をしているかもしれません。</span>まずは無料で、あなたの街で「今、一番高く評価してくれる上位6社」を確認してください。</p>
 
         <div class="cta-container">
-            <a href="https://bit.ly/4e0UMAO" class="cta-button" target="_blank" rel="nofollow noopener">
+            <a href="https://bit.ly/4e0UMAO" class="cta-button" onclick="trackLead()" target="_blank" rel="nofollow noopener">
                 無料で最高値をチェックする ＞
             </a>
             <span class="cta-sub">最短3分。完全無料・秘密厳守。</span>
